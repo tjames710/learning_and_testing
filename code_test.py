@@ -96,15 +96,16 @@
 ##############################################################
 # This function takes a string and makes the first half lower,
 # case and the second half upper case.
-def sillycase(s):
-	length_by_2 = len(s) // 2
-	s_list = list(s)
-	first_half = s_list[:length_by_2]
-	first = str.lower(''.join(first_half))
-	second_half = s_list[length_by_2:]
-	second = str.upper(''.join(second_half))
-	return(first + second)
+# def sillycase(s):
+# 	length_by_2 = len(s) // 2
+# 	s_list = list(s)
+# 	first_half = s_list[:length_by_2]
+# 	first = str.lower(''.join(first_half))
+# 	second_half = s_list[length_by_2:]
+# 	second = str.upper(''.join(second_half))
+# 	return(first + second)
 
-print(sillycase("happiest"))
+# print(sillycase("happiest"))
 
 ###############################################################
+

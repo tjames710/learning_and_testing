@@ -4,12 +4,10 @@
 #         x = y = int(x) * x
 #     except ValueError:
 #         y = len(x) * x
-#     print(y) 
+#     return y 
     
-# squared(5)
-# squared("ted")
-
-
+# print(squared(5))
+# print(squared("ted"))
 
 
 ###################################################################
@@ -69,7 +67,7 @@
     
 # #######################################################################        
            
-    
+#########    
 
 # print(disemvowel("apples"))
 
@@ -79,19 +77,26 @@
 
 # print(disemvowel("iglou"))
 
+#############
+
+##########################################################################
+# This takes the first four items of a list and returns them
 
 # def first_4():
 #     a = [4, 5, 6, 8, 9, 0, 12, 45]
 #     first4_items = a[:4]
 #     return first4_items
+############################################################################
 
+############################################################################
+# This function reverses the even idexes in reverse.
 # def reverse_evens(a):
 #     evens = a[::2]
 #     reverse = evens[-1::-1]
     
 #     return reverse
 # print(reverse_evens([7, 8, 9, 3, 4, 6, 5, 123]))
-
+#############################################################################
 
 ##############################################################
 # This function takes a string and makes the first half lower,

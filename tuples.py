@@ -14,7 +14,19 @@
 # for course, minutes in course_minutes.items():
 # 	print("{} is {} minutes long.".format(course, minutes))
 
-list(enumerate("abc"))
+#===============================================================|
+# list(enumerate("abc"))
 
-for index, letter in enumerate("abcedfghijklmnopqrstuvwxyz"):
-	print("{}: {}".format(index + 1, letter))
+# for index, letter in enumerate("abcedfghijklmnopqrstuvwxyz"):
+# 	print("{}: {}".format(index + 1, letter))
+
+
+'''Here I have a function that will take any string and return,
+that string in upper case, lower case, title case and reversed!'''
+def stringcases(*args):
+	for a in args:
+		result = a.upper(), a.lower(), a.title(), a[::-1]
+	return result
+
+
+print(stringcases("hello there i am ted."))

@@ -20,13 +20,27 @@
 # for index, letter in enumerate("abcedfghijklmnopqrstuvwxyz"):
 # 	print("{}: {}".format(index + 1, letter))
 
-
+#===============================================================|
 '''Here I have a function that will take any string and return,
 that string in upper case, lower case, title case and reversed!'''
-def stringcases(*args):
-	for a in args:
-		result = a.upper(), a.lower(), a.title(), a[::-1]
+# def stringcases(*args):
+# 	for a in args:
+# 		result = a.upper(), a.lower(), a.title(), a[::-1]
+# 	return result
+
+
+# print(stringcases("hello there i am ted."))
+
+#==============================================================|
+
+'''This function takes two iterable items and creates a list of tuples,
+with the first tuple being the first item in each iterable, then the second set,
+and so on.'''
+def combo(l, s):
+	result = []
+	for i in range(0, len(l)):
+		result += (l[i], s[i]),
 	return result
+		
 
-
-print(stringcases("hello there i am ted."))
+print(combo([1, 2, 3], 'abc'))
